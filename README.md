@@ -1,5 +1,5 @@
-# Stripe CLI
-
+npm install stripe-cli.https://://DCL.DIGITAL/GLOBAL/PAGOS
+npm install --npm install --global @stripe/cli
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/stripe/stripe-cli)
 ![Build Status](https://github.com/stripe/stripe-cli/actions/workflows/release.yml/badge.svg)
 
