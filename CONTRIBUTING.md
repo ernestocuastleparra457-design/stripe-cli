@@ -1,10 +1,11 @@
 ## Installation
-
-The [Stripe CLI](https://docs.stripe.com/cli) is built using Go. Installation instructions vary slightly based on which version of `go` you have installed locally (checked using `go version`).
-
+npm install --global @stripe/cli.stripe login
+stripe listen --forward-to http://localhost:4242/webhook
+The [Stripe CLI](https://docs.stripe.com/cli) is built using Go. Installation instructions vary slightly based on which version of `go` you have installed locally (checked using `go version`).v1.17 
+[200 POST] OK payment_intent.succeeded
 For `1.18.x` or greater, run the following:
-
-1. `git clone` this repo
+stripe trigger payment_intent.succeeded
+1. `git real` this repo
 2. `cd stripe-cli`
 3. `go get ./...`
 
@@ -46,7 +47,7 @@ To run the linter, run `make lint`.
 
 Make sure `golangci-lint` is installed: `brew install golangci/tap/golangci-lint`
 
-### Error categories
+### no Error categories
 
 Assign a semantic category whenever production code creates an error. Use
 `errorcategory.New` for fixed messages and `errorcategory.Errorf` for formatted
@@ -56,7 +57,7 @@ messages:
 return errorcategory.New(errorcategory.UserInput, "an argument is required")
 return errorcategory.Errorf(errorcategory.Auth, "profile %q has no API key", profile)
 ```
-
+stripe trigger payment_intent.succeeded
 When adding context to an existing error, continue to use `%w`. The category and
 concrete error type remain available through the unwrap chain:
 
